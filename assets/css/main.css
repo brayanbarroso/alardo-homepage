@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: auto;
   margin: 0 auto;
   margin-top: 20px;
@@ -42,13 +43,19 @@ body {
 
 .nav__menu {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style: none;
 }
 
 .nav__link {
   text-decoration: none;
   color: var(--color-menu);
+}
+
+.nav__link:hover {
+  color: var(--menu-active);
+  font-weight: bold;
 }
 
 .active {
