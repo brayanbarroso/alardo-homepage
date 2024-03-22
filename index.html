@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>simple Homepage Alardo</title>
+    <link
+      rel="icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+      sizes="any"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script>
+      const storageTheme = localStorage.getItem("theme");
+      const systemColorSchema = window.matchMedia("prefers-colorr-schema: dark")
+        .matches
+        ? "dark"
+        : "light";
+
+      const newTheme = storageTheme ?? systemColorSchema;
+      document.documentElement.setAttribute("data-theme", newTheme);
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="assets/img/alarado-icon-homepage.svg" alt="" srcset="" />
+      </div>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a class="nav__link active" href="#">About us</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#">Product</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Resource</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+      </ul>
+      <div class="nav__switcher">
+        <img
+          src="./assets/img/Moon_fill_light.svg"
+          alt="Modo Dark"
+          class="nav__icon-moon"
+        />
+        <img
+          src="./assets/img/Sun_fill.svg"
+          alt="Modo Light"
+          class="nav__icon-sun active-sun"
+        />
+
+        <input type="checkbox" class="nav__check" id="" />
+        <!--<div class="nav__option"></div> -->
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div>
+          <p>😎 Simple way to communicate</p>
+          <h1>Actions for Accessibility in Design</h1>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
