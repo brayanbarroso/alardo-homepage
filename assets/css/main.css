@@ -6,14 +6,16 @@
 }
 
 :root[data-theme="light"] {
-  --bg-color: #ffffff;
+  --bg-color: #f2f9fe;
   --color-menu: #909193;
   --color-switcher: #111729;
   --color-active: #f2f9fe;
-  --menu-active: #111729;
+  --menu-active: #223344;
   --border-option: none;
-  --color-text: #111729;
+  --color-text: #223344;
   --color-paragraph: #909193;
+  --background-buttom: #2a4dd0;
+  --text-buttom: #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -24,6 +26,8 @@
   --menu-active: #fff;
   --color-text: #ffffff;
   --color-paragraph: #909193;
+  --background-buttom: #2a4dd0;
+  --text-buttom: #ffffff;
   --border-option: none;
   --transform-option: translateX(100%);
 }
@@ -47,7 +51,7 @@ body {
 .nav__menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -128,7 +132,7 @@ body {
 }
 
 .main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
   margin-block-start: 40px;
   max-width: 90%;
@@ -137,14 +141,14 @@ body {
 .main__section {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   justify-content: space-between;
 }
 
 .section__info {
-  border: 1px solid blue;
-  max-width: 400px;
+  /* border: 1px solid blue; */
+  max-width: 480px;
 }
 
 .section__text-info {
@@ -156,17 +160,66 @@ body {
 
 .section__description h1 {
   color: var(--color-text);
-  font-size: 60px;
+  font-size: 4.5rem;
+  line-height: 1.3;
+  margin-block-start: 20px;
 }
 
 .section__paragraph-info {
   color: var(--color-paragraph);
-  font-size: 16px;
   margin-top: 20px;
 }
 
+.section__button {
+  margin-block-start: 25px;
+  margin-block-end: 50px;
+}
+
+.button-info {
+  background-color: var(--background-buttom);
+  border-radius: 8px;
+  color: var(--text-buttom);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-inline-end: 30px;
+  padding-block: 15px;
+  padding-inline: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-info:hover {
+  background-color: var(--color-switcher);
+}
+
+.button-link {
+  color: var(--background-buttom);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  color: var(--color-paragraph);
+}
+
+.section__icon {
+  display: flex;
+}
+
+.section__icon p {
+  color: var(--color-paragraph);
+  font-size: 0.875rem;
+  margin-inline-start: 10px;
+}
+
+.section__icon .icon-round {
+  margin-inline-start: 20px;
+}
+
 .main__image {
-  max-width: 510px;
+  max-width: 500px;
 }
 
 .main__image img {
