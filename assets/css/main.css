@@ -225,3 +225,14 @@ body {
 .main__image img {
   width: 100%;
 }
+
+@media (min-width: 1024px) {
+  .main__section {
+    flex-direction: column-reverse;
+  }
+
+  .section__info {
+    border: 1px solid blue;
+    max-width: 900px;
+  }
+}
