@@ -226,13 +226,21 @@ body {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .nav {
+    margin-inline: 32px;
+  }
   .main__section {
     flex-direction: column-reverse;
   }
 
   .section__info {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 900px;
+  }
+
+  .section__paragraph-info {
+    margin-block-end: 40px;
+    max-width: 500px;
   }
 }
