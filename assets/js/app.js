@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const logo = document.querySelector('.logo');
     const root = document.documentElement;
 
+    // Menu responsivo
+    const hamburguer = document.querySelector('.nav__hamburguer');
+    const close = document.querySelector('.nav__close');
+    const menu_mobile = document.querySelector('.nav');
+
     if(root.getAttribute('data-theme') === 'dark'){
         swictherTheme.checked = true;
         moon.src="./assets/img/Moon_fill.svg";
@@ -43,4 +48,12 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
         
     }
+
+    hamburguer.addEventListener('click', ()=>{
+        menu_mobile.classList.toggle('nav_menu')
+    })
+
+    close.addEventListener('click', ()=>{
+        menu_mobile.classList.remove('nav_menu')
+    })
 })

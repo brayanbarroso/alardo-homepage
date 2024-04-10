@@ -29,7 +29,7 @@
     </script>
   </head>
   <body>
-    <nav class="nav">
+    <header class="hero">
       <div class="nav__logo">
         <img
           class="logo"
@@ -37,13 +37,24 @@
           alt="Logo Alarado"
         />
       </div>
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a class="nav__link active" href="#">About us</a>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="#">Product</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Resource</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+      <div class="hero__buttom">
+        <a href="#" class="nav__hamburguer">
+          <img
+            src="./assets/img/menu.svg"
+            alt="Logo Menu hamburguesa"
+            class="nav__icon"
+          />
+        </a>
+      </div>
+      <nav class="nav" id="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link active" href="#">About us</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Product</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Resource</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
         <div class="nav__switcher">
           <img
             src="./assets/img/Moon_fill_light.svg"
@@ -59,8 +70,16 @@
           <input type="checkbox" class="nav__check" id="" />
           <!--<div class="nav__option"></div> -->
         </div>
-      </ul>
-    </nav>
+        <a href="#" class="nav__close">
+          <img
+            src="./assets/img/close.svg"
+            alt="Logo Menu hamburguesa"
+            class="nav__icon"
+          />
+        </a>
+      </nav>
+    </header>
+
     <main class="main">
       <section class="main__section">
         <div class="section__info">
